@@ -1,7 +1,7 @@
-gravier_plot <- function(g1, g2){
-gravier_data_outcome %>% 
-  ggplot(mapping = aes(x = g1,
-                       y = g2,
-                       color = outcome))+
+gravier_plot <- function(x1, x2){
+gravier_data %>% 
+  ggplot(mapping = aes(x = x1,
+                       y = x2,
+                       color = value))+
   geom_point()
 }
